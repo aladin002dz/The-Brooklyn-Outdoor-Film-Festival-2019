@@ -1,16 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
+body, html {
+    background-color: #ffffff;
+    color: #ce2123;
+    font-family: 'Roboto', sans-serif;
+}
 
 nav {
-    background-color: black;
-    color: whitesmoke;
+    background-color: #ffffff;
 }
 
 nav a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav a:hover {
-    text-decoration: none;
-    color: whitesmoke;
+    text-decoration: underline;
+    color: #000;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+
+.btn-outline-info {
+    color:  #16dcff;
+    border-color: #16dcff;
+}
+
+.btn-info {
+    background-color: #16dcff;
+}
+
+#registration .container{
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+}
+
+footer {
+    background: #000;
+}
+
+.card {
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.9), 0 2px 10px 0 rgba(0,0,0,.9);
 }
