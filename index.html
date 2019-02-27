@@ -13,31 +13,37 @@
     <link rel="icon" href="./img/Logo.png" type="image/png" sizes="16x16">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <!-- Top navigation bar -->
     <nav class="site-header sticky-top py-1">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" href="#">
-            <!--Logo here-->
-            logo
+                <img src="./img/Logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
             </a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Nav Item1</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Nav Item2</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Nav Item3</a>
+            <a class="py-2 d-none d-md-inline-block" href="#about">About</a>
+            <a class="py-2 d-none d-md-inline-block" href="#films">Films</a>
+            <a class="py-2 d-none d-md-inline-block" href="#news">news</a>
         </div>
     </nav>
     
-    <!-- Header -->
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
-        <div class="col-md-8 p-lg-5 mx-auto my-5">
-            <h1 class="title">The Brooklyn Outdoor Film Festival 2019</h1>
-            <p class="lead font-weight-normal">Join us at Brooklyn Bridge Park this year from August 5th through 8th, from 6pm to midnight</p>
-            <a class="btn btn-outline-info" href="#">Register Now</a>
+    <!-- َAbout Section-->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                    <div class="col-md-6">
+                        <h1 class="display-4 font-italic">The Brooklyn Outdoor Film Festival 2019</h1>
+                        <p class="lead my-3">Join us at Brooklyn Bridge Park this year from August 5th through 8th, from 6pm to midnight.</p>
+                        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                        <a class="btn btn-outline-info" href="#">Register Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <!-- Welcome Section-->
+    </section>
+
     <!-- Movies Section-->
     <section id="Films" class="container">
         <h2>Films</h2>
@@ -108,7 +114,7 @@
     <section id="news" class="container py-5">
         <h2>Latest News and Announcements</h2>
         <div class="row">
-            <div class="col">
+            <div class="col-md-8 order-md-1">
                 <div class="my-3 p-3 bg-white rounded shadow-sm">
                     <h6 class="border-bottom border-gray pb-2 mb-0">Press articles</h6>
                     <div class="media text-muted pt-3">
@@ -146,193 +152,34 @@
                     </small>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            <div class="col-md-4 order-md-2 mb-4">
                 <div class="my-3 p-3 bg-white rounded shadow-sm">
                     <h6 class="border-bottom border-gray pb-2 mb-0">Recent tweets</h6>
                     <div class="media text-muted pt-3">
                         <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
                         <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">@username</strong>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo risus.
                         </p>
                     </div>
                     <div class="media text-muted pt-3">
                         <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"></rect><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
                         <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">@username</strong>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                        </p>
-                    </div>
-                    <div class="media text-muted pt-3">
-                        <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"></rect><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
-                        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">@username</strong>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, ut fermentum massa justo sit amet risus.
                         </p>
                     </div>
                     <small class="d-block text-right mt-3">
-                        <a href="#">All updates</a>
+                        <a href="#">All tweets</a>
                     </small>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Registration Section-->
-    
+    <!--Registration Section-->   
     <section id="registration">
         <div class="container py-5">
-            <div class="row">
-                <div class="col">
-                        <h4 class="mb-3">Billing address</h4>
-                        <form class="needs-validation" novalidate="">
-                            <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                                <div class="invalid-feedback">
-                                Valid first name is required.
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                                <div class="invalid-feedback">
-                                Valid last name is required.
-                                </div>
-                            </div>
-                            </div>
-                    
-                            <div class="mb-3">
-                            <label for="username">Username</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                <span class="input-group-text">@</span>
-                                </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                                <div class="invalid-feedback" style="width: 100%;">
-                                Your username is required.
-                                </div>
-                            </div>
-                            </div>
-                    
-                            <div class="mb-3">
-                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                            <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
-                            </div>
-                            </div>
-                    
-                            <div class="mb-3">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                            <div class="invalid-feedback">
-                                Please enter your shipping address.
-                            </div>
-                            </div>
-                    
-                            <div class="mb-3">
-                            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                            </div>
-                    
-                            <div class="row">
-                            <div class="col-md-5 mb-3">
-                                <label for="country">Country</label>
-                                <select class="custom-select d-block w-100" id="country" required="">
-                                <option value="">Choose...</option>
-                                <option>United States</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                Please select a valid country.
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="state">State</label>
-                                <select class="custom-select d-block w-100" id="state" required="">
-                                <option value="">Choose...</option>
-                                <option>California</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                Please provide a valid state.
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="zip">Zip</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                Zip code required.
-                                </div>
-                            </div>
-                            </div>
-                            <hr class="mb-4">
-                            <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="same-address">
-                            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="save-info">
-                            <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                            </div>
-                            <hr class="mb-4">
-                    
-                            <h4 class="mb-3">Payment</h4>
-                    
-                            <div class="d-block my-3">
-                            <div class="custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                                <label class="custom-control-label" for="credit">Credit card</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                                <label class="custom-control-label" for="debit">Debit card</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                                <label class="custom-control-label" for="paypal">PayPal</label>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="cc-name">Name on card</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                                <small class="text-muted">Full name as displayed on card</small>
-                                <div class="invalid-feedback">
-                                Name on card is required
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="cc-number">Credit card number</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                Credit card number is required
-                                </div>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <div class="col-md-3 mb-3">
-                                <label for="cc-expiration">Expiration</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                Expiration date required
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="cc-cvv">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                Security code required
-                                </div>
-                            </div>
-                            </div>
-                            <hr class="mb-4">
-                            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-                        </form>
-                </div>
-            </div>
             <button type="button" class="btn btn-info btn-lg d-flex m-auto" data-toggle="modal" data-target="#registerModal">Register Now!
             </button>
         </div>
@@ -341,33 +188,107 @@
 
 
     <!-- The Footer -->
-    <footer class="container py-5">
-        <div class="row">
-            <div class="col-12 col-md">
-                <!-- Logo here -->
-                logo
-                <!-- Copyright here -->
-                <small class="d-block mb-3 text-muted">&copy; 2019</small>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Learn More</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Brooklyn’s news</a></li>
-                    <li><a class="text-muted" href="#">Brooklyn Bridge Park’s website</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Follow us</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Twitter</a></li>
-                    <li><a class="text-muted" href="#">Instagram</a></li>
-                    <li><a class="text-muted" href="#">Facebook</a></li>
-                    <li><a class="text-muted" href="#">Linkedin</a></li>
-                </ul>
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <!-- Logo -->
+                    <a class="py-2" href="#">
+                        <img src="./img/Logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
+                    </a>
+                    <!-- Copyright here -->
+                    <small class="d-block mb-3 text-muted">&copy; 2019</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Learn More</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Brooklyn’s news</a></li>
+                        <li><a class="text-muted" href="#">Brooklyn Bridge Park’s website</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Follow us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Twitter</a></li>
+                        <li><a class="text-muted" href="#">Instagram</a></li>
+                        <li><a class="text-muted" href="#">Facebook</a></li>
+                        <li><a class="text-muted" href="#">Linkedin</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
-
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register for Brooklyn Outdoor Film Festival</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">
+                                            person
+                                        </i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="username" placeholder="Name" required="">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                Your username is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">
+                                            email
+                                        </i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="film">Days to attend</label>
+                            <div class="ml-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="day1">
+                                <label class="custom-control-label" for="day1">August, 5th</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="day2">
+                                <label class="custom-control-label" for="day2">August, 6th</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="day3">
+                                <label class="custom-control-label" for="day3">August, 7th</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="day4">
+                                <label class="custom-control-label" for="day4">August, 8th</label>
+                            </div>
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <label for="message">Drop us a word</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-lg btn-block w-10" data-dismiss="modal">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./vendor/js/jquery-3.3.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
