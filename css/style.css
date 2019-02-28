@@ -7,18 +7,18 @@ body, html {
 }
 
 nav {
-    background-color: #ffffff;
+    background-color: #333;
 }
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: #ce2123;
     font-family: 'Raleway', sans-serif;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #000;
+    color: #ce2123;
 }
 
 h1, h2, h3, h4 {
@@ -48,10 +48,14 @@ h1, h2, h3, h4 {
 }
 
 footer {
-    background: #000;
+    background: #333;
 }
 
 .card {
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.9), 0 2px 10px 0 rgba(0,0,0,.9);
+}
+
+#about {
+    margin-top: 3rem;
 }
