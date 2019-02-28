@@ -38,12 +38,12 @@ h1, h2, h3, h4 {
     font-size: 5rem;
     font-weight: bold;
     line-height: 5rem;
+    color: #ce2123;
 }
 
 
 #registration .container{
     border-top: 1px solid #888888;
-    border-bottom: 1px solid #888888;
 }
 
 footer {
@@ -69,3 +69,69 @@ footer {
 .btn-info {
     background-color: #16dcff;
 }
+
+.social-links {
+    list-style: none;
+    bottom: 0;
+}
+
+/* Social Links -------------------------------------------------*/
+
+.social-links {
+    list-style: none;
+    bottom: 0;
+  }
+  
+.btn-circle {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem!important;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+  .social-links ul {
+    margin-bottom: 0%;
+    padding-inline-start: 0;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin-right: 1%;
+  }
+  
+  .social-links a,
+  .social-links a:link,
+  .social-links a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #333;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+  
+  .social-links i {
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    margin: auto 3px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+  
+  .social-links .fa-facebook-f:hover {
+    background-color: #3B5998;
+    color: #fff;
+  }
+  
+  .social-links .fa-twitter:hover {
+    background-color: #1DA1F2;
+    color: #fff;
+  }
+  
+  .social-links .fa-instagram:hover {
+    background-color: #E14666;
+    color: #fff;
+  }
+  
