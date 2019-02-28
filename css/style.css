@@ -8,6 +8,7 @@ body, html {
 
 nav {
     background-color: #333;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 nav a {
@@ -26,21 +27,19 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
+.header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/festival.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/festival.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
 .title {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 5rem;
 }
 
-
-.btn-outline-info {
-    color:  #16dcff;
-    border-color: #16dcff;
-}
-
-.btn-info {
-    background-color: #16dcff;
-}
 
 #registration .container{
     border-top: 1px solid #888888;
@@ -58,4 +57,15 @@ footer {
 
 #about {
     margin-top: 3rem;
+}
+
+.btn-outline-info {
+    color:  #16dcff!important;
+    border-color: #16dcff;
+}
+.btn-outline-info:hover {
+    color:  #ffffff!important;
+}
+.btn-info {
+    background-color: #16dcff;
 }
