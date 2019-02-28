@@ -13,18 +13,17 @@
     <link rel="icon" href="./img/Logo.png" type="image/png" sizes="16x16">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <!-- Top navigation bar -->
-    <nav class="site-header sticky-top py-1">
+    <nav class="site-header sticky-top">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
             <a class="py-2" href="#about">
                 <img src="./img/Logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
             </a>
-            <a class="py-2 d-none d-md-inline-block" href="#about">About</a>
-            <a class="py-2 d-none d-md-inline-block" href="#films">Films</a>
-            <a class="py-2 d-none d-md-inline-block" href="#news">news</a>
+            <a class="d-none d-md-inline-block nav-item" href="#about">About</a>
+            <a class="d-none d-md-inline-block nav-item" href="#films">Films</a>
+            <a class="d-none d-md-inline-block nav-item" href="#news">News</a>
         </div>
     </nav>
     
@@ -249,9 +248,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="material-icons">
-                                            person
-                                        </i>
+                                        <i class="fas fa-user-alt"></i>
                                     </span>
                                 </div>
                                 <input type="text" class="form-control" id="username" placeholder="Name" required="">
@@ -264,9 +261,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="material-icons">
-                                            email
-                                        </i>
+                                        <i class="fas fa-envelope"></i>
                                     </span>
                                 </div>
                                 <input type="email" class="form-control" id="email" placeholder="Email">
