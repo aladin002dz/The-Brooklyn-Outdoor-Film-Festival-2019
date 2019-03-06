@@ -15,18 +15,59 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Top navigation bar -->
-    <nav class="site-header sticky-top">
-        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <a class="py-2" href="#about">
-                <img src="./img/Logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container d-flex">
+                <a href="#about">
+                    <img src="./img/Logo.png" width="70" height="70" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#films">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a href="#about">
+                <img src="./img/Logo.png" width="70" height="70" alt="logo">
             </a>
-            <a class="d-none d-md-inline-block nav-item" href="#about">About</a>
-            <a class="d-none d-md-inline-block nav-item" href="#films">Films</a>
-            <a class="d-none d-md-inline-block nav-item" href="#news">News</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="nav collapse navbar-collapse flex-row-reverse" id="main-nav">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#films">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
+-->
     <!-- َAbout Section-->
     <section id="about" class="container">
         <div class="row">
@@ -188,8 +229,6 @@
         </div>
     </section>
 
-
-
     <!-- The Footer -->
     <footer class="py-5">
         <div class="container">
@@ -268,8 +307,10 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="film">Days to attend</label>
-                            <div class="ml-3">
+                            <label><div class="input-group-prepend d-inline-block mr-2">
+                                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                            </div> Days to attend</label>
+                            <div class="ml-5 pl-5">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="day1">
                                 <label class="custom-control-label" for="day1">August, 5th</label>
@@ -289,7 +330,10 @@
                             </div>
                         </div>  
                         <div class="form-group">
-                            <label for="message">Drop us a word</label>
+                                <label for="message">
+                                    <div class="input-group-prepend d-inline-block mr-2">
+                                        <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                                    </div> Drop us a word</label>
                             <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
                     </form>
