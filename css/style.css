@@ -6,6 +6,33 @@ body, html {
 }
 
 /******************************************************************/
+nav {
+  background-color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-item {
+  padding-left: 5rem;
+}
+
+.nav-link:hover {
+  color: #E85D00!important;
+}
+
+.navbar-toggler {
+  padding: 0;
+  margin: 0;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
 /*
 nav {
   background-color: #333;
@@ -186,4 +213,21 @@ footer h5 {
 .social-links .fa-instagram:hover {
   background-color: #E14666;
   color: #fff;
+}
+
+
+/***************************************************************/
+@media only screen and (max-width: 768px) {
+  .nav-item {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  }
+
+  .subheader{
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
