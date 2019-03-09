@@ -168,6 +168,10 @@ footer h5 {
   color: #fff;
 }
 
+#films img {
+  width:200px;
+  height:250px; 
+}
 
 /***************************************************************/
 @media only screen and (max-width: 768px) {
@@ -190,11 +194,22 @@ footer h5 {
     line-height: 1.2;
   }
 
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
   .subheader{
     display: none;
   }
 
   .card-text {
     display: none;
-  } 
+  }
+  
+  #films img {
+    width:100%!important;
+    height: auto;
+  }
+
 }
