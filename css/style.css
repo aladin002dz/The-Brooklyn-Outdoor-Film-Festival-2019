@@ -235,4 +235,8 @@ footer h5 {
   .subheader{
     display: none;
   }
+
+  .card-text {
+    display: none;
+  } 
 }
