@@ -1,11 +1,13 @@
+/* Import the google fonts *******************************************/
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 
+/* General Setting ***************************************************/
 body, html {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
 
-/******************************************************************/
+/* Navigation bar settings *******************************************/
 nav {
   background-color: #333;
   font-family: 'Raleway', sans-serif;
@@ -33,21 +35,24 @@ nav {
   margin: 0;
 }
 
-/******************************************************************************/
+/* Titles settings ***********************************************/
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
-h2 {
+h1, h2, h3, h5 {
   color: #ce2123; 
+}
+
+h2 {
+
   font-size: 3rem;
   line-height: 4rem;
   font-weight: 900;
 }
 
 h3 {
-  color: #ce2123; 
   font-weight: 900;
 }
 
@@ -55,11 +60,17 @@ strong {
   font-weight: 500;
 }
 
+/* About Section *******************************************************/
+#about {
+  margin-top: 6.5rem;
+}
+
 .header {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/festival.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/festival.jpg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .title {
@@ -69,21 +80,17 @@ strong {
   color: #ce2123;
 }
 
-#registration .container{
-  border-top: 1px solid #888888;
-}
 
-footer {
-  background: #333;
-}
-
+/* Films Section **********************************************************/
 .card {
   border-radius: .25rem;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.9), 0 2px 10px 0 rgba(0,0,0,.9);
 }
 
-#about {
-  margin-top: 6.5rem;
+
+/* Registration Section **************************************************/
+#registration .container{
+  border-top: 1px solid #888888;
 }
 
 .btn-outline-info {
@@ -100,6 +107,10 @@ footer {
 }
 
 /* Footer ----------------------------------------------------------------*/
+footer {
+  background: #333;
+}
+
 footer h5 {
   color: #ce2123;
 }
@@ -164,16 +175,13 @@ footer h5 {
   color: #fff;
 }
 
-#films img {
-  width:200px;
-  height:250px; 
-}
 
-/***************************************************************/
+/* Small screens display *****************************************************/
 @media only screen and (max-width: 768px) {
+
   .nav-item {
-  padding-left: 5rem;
-  padding-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .jumbotron {
@@ -210,5 +218,9 @@ footer h5 {
 
   footer {
     padding: 1rem 0;
+  }
+
+  #follow-us{
+    margin: auto;
   }
 }
