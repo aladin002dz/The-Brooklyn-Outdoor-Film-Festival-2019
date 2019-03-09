@@ -223,11 +223,16 @@ footer h5 {
   padding-right: 5rem;
   }
 
-  .subheader{
-    display: none;
+  .jumbotron {
+    padding: 1rem!important;
   }
 
-  h1 {
+  #main-title {
     font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .subheader{
+    display: none;
   }
 }
