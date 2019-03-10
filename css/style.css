@@ -259,12 +259,21 @@ footer h5 {
   #follow-us{
     margin: auto;
   }
+
+  .navbar-shrink {
+    font-size: 1.5rem!important;
+  }
+
+  
+.navbar-shrink .navbar-logo img {
+  width: 70px!important;
+  height: 70px!important;
+}
 }
 
 
 /* Scroll to top Button ******************************************/
 #scroll-to-top {
-
   display: none;
   position: fixed;
   right: 35px;

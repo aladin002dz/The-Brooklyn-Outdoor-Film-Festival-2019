@@ -1,9 +1,3 @@
-// Smooth scrolling
-var scroll = new SmoothScroll('nav a[href*="#"]', {
-	speed: 500,
-	speedAsDuration: true
-});
-
 (function ($) {
     "use strict";
 
@@ -21,9 +15,17 @@ var scroll = new SmoothScroll('nav a[href*="#"]', {
 			PRELOADER JS --------------------------
 		-------------------------------------------*/
 		$window.on('load', function () {
-			$preloader.fadeOut('slow')
+			$preloader.fadeOut('slow');
 			$nav.addClass('fixed-top');
 			$nav.removeClass('d-none');
+		});
+
+		/*-----------------------------------------
+			Smooth scrolling --------------------------
+		-------------------------------------------*/
+		var scroll = new SmoothScroll('nav a[href*="#"]', {
+			speed: 500,
+			speedAsDuration: true
 		});
 
 		/*-----------------------------------------------------------------------------------
@@ -43,4 +45,10 @@ var scroll = new SmoothScroll('nav a[href*="#"]', {
 		// Collapse the navbar when page is scrolled
 		$window.scroll(navbarFloat);
 		});
+
+		/*---------------------------------------------------
+			Wow Animation -------------------------------------
+		----------------------------------------------------*/
+		new WOW().init();
+		
 }(jQuery));
