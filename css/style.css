@@ -175,6 +175,42 @@ footer h5 {
   color: #fff;
 }
 
+/* Preloader *****************************************************************/
+#preloader {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 999;
+
+}
+
+.circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+}
+
+.circle {
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  border: 8px solid #d4d4d4;
+  border-top: 8px solid #ce2123;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* Small screens display *****************************************************/
 @media only screen and (max-width: 768px) {
@@ -224,3 +260,43 @@ footer h5 {
     margin: auto;
   }
 }
+
+
+/* Scroll to top Button ******************************************/
+#scroll-to-top {
+
+  display: none;
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 999;
+}
+
+#scroll-to-top i {
+  color: #fff;
+  background-color: #ce2123;
+  -webkit-box-shadow: 1px 1px 6px #333;
+  -moz-box-shadow: 1px 1px 6px #333;
+  -o-box-shadow: 1px 1px 6px #333;
+  box-shadow: 1px 1px 6px #333;
+}
+
+.display {
+  display: inline !important;
+}
+
+/* Shrinked Navigation Bar Spacing  ****************************************/
+
+.navbar-shrink {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  -webkit-transition: all .2s; 
+  transition: all .2s; 
+}
+
+.navbar-shrink .navbar-logo img {
+  width: 44px;
+  height: 44px;
+}
+
