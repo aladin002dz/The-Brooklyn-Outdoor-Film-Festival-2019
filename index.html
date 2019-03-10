@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <!-- Website Title  -->
     <title>The Brooklyn Outdoor Film Festival 2019</title>
 
+    <!-- Website Description  -->
+    <meta name="description" content="Major entertainment venue in New York for this summer, Various shows of a selection of films for all ages.">
     
-    <meta name="description" content="Responsive One Page Template To Sell eBook">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- FavIcon -->
     <link rel="icon" href="./img/Logo.png" type="image/png" sizes="16x16">
 
+    <!-- Fontawesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS Animation Library -->
+    <link rel="stylesheet" href="./vendor/css/animate.css">
+
+
 </head>
+
 <body>
     <!-- Preloader =================================== -->
     <div id="preloader">
@@ -62,7 +73,7 @@
     <section id="about" class="container pt-3 pt-md-5">
         <div class="row">
             <div class="col">
-                <div class="header jumbotron p-4 p-md-5 text-white rounded">
+                <div class="header jumbotron p-4 p-md-5 text-white rounded wow zoomIn">
                     <div class="col">
                         <h1 id="main-title" class="display-4 font-italic title pt-3 pt-sm-3">The Brooklyn Outdoor Film Festival 2019</h1>
                         
@@ -86,7 +97,7 @@
         <h2>Films</h2>
         <div class="row">
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative wow slideInUp">
                     <div class="col-auto">
                         <img src="./img/posters/black-panther.jpg" width="200" height="250" >
                     </div>
@@ -100,7 +111,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative wow slideInUp">
                     <div class="col-auto">
                         <img src="./img/posters/vice.jpg" width="200" height="250" >
                     </div>
@@ -108,7 +119,7 @@
                         <strong class="d-inline-block mb-2 text-info">Biography, Comedy, Drama</strong>
                         <h3 class="d-inline-block mb-0">Vice</h3>
                         <div class="mb-1 text-muted">Aug 6</div>
-                        <p class="card-text mb-auto">The story of Dick Cheney, an unassuming bureaucratic Washington insider, who quietly wielded immense power as ...</p>
+                        <p class="card-text mb-auto">The story of Dick Cheney, an unassuming bureaucratic Washington insider ...</p>
                         <a href="https://www.imdb.com/title/tt6266538/" class="stretched-link" target="_blank">Movie details...</a>
                     </div>
                 </div>
@@ -116,7 +127,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative wow slideInUp">
                     <div class="col-auto">
                         <img src="./img/posters/mi-fallout.jpg" width="200" height="250" >
                     </div>
@@ -130,7 +141,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative wow slideInUp">
                     <div class="col-auto">
                         <img src="./img/posters/searching.jpg" width="200" height="250" >
                     </div>
@@ -152,7 +163,7 @@
         <h2>Latest News and Announcements</h2>
         <div class="row">
             <div class="col-md-8 order-md-1">
-                <div class="bg-white rounded shadow-sm">
+                <div class="bg-white rounded shadow-sm wow fadeIn">
                     <h6 class="border-bottom border-gray pb-2 mb-0">Press articles</h6>
                     <div class="media text-muted pt-3">
                         <img class="bd-placeholder-img mr-2 rounded" src="./img/logopress/ny-times.jpg" width="32" height="32" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
@@ -189,7 +200,7 @@
                     </small>
                 </div>
             </div>
-            <div class="col-md-4 order-md-2 mb-4">
+            <div class="col-md-4 order-md-2 mb-4 wow slideInUp">
                 <div class="bg-white rounded shadow-sm">
                     <h6 class="border-bottom border-gray pb-2 mb-0">Recent tweets</h6>
                     <div class="media text-muted pt-3">
@@ -267,6 +278,8 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Registration Form ========================================================== -->    
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" style="display: none;" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -345,10 +358,12 @@
         <i class="fa fa-angle-up btn-circle"></i>
     </a>
 
-    <script src="./vendor/js/jquery-3.3.1.min.js" ></script>
-    <script src="./vendor/js/smooth-scroll.polyfills.min.js" ></script>
+    <!-- JS Scripts of the website ===================== -->
+    <script src="./vendor/js/jquery-3.3.1.min.js" ></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+    <script src="./vendor/js/smooth-scroll.polyfills.min.js" ></script>
+    <script src="./vendor/js/wow.min.js" ></script> 
     <script src="./js/main.js"></script>
 </body>
 </html>
