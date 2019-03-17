@@ -212,7 +212,21 @@ footer h5 {
   }
 }
 
-/* Small screens display *****************************************************/
+/* Tablet (Small) screens display *****************************************************/
+@media only screen and (max-width: 992px) {
+
+  #films img {
+    width:100%!important;
+    height: auto;
+    max-height: 473px;
+  }
+
+  .card-text {
+    display: none;
+  }
+}
+
+/* Mobile (Extra Small) screens display *****************************************************/
 @media only screen and (max-width: 768px) {
 
   .nav-item {
@@ -243,13 +257,8 @@ footer h5 {
     display: none;
   }
 
-  .card-text {
-    display: none;
-  }
-  
   #films img {
-    width:100%!important;
-    height: auto;
+    max-height: none;
   }
 
   footer {
@@ -265,10 +274,10 @@ footer h5 {
   }
 
   
-.navbar-shrink .navbar-logo img {
-  width: 70px!important;
-  height: 70px!important;
-}
+  .navbar-shrink .navbar-logo img {
+    width: 70px!important;
+    height: 70px!important;
+  }
 }
 
 
