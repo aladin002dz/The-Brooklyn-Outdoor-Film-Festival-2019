@@ -212,6 +212,30 @@ footer h5 {
   }
 }
 
+
+/* Scroll to top Button **************************************************/
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 8rem;
+  z-index: 999;
+}
+
+#scroll-to-top i {
+  color: #fff;
+  background-color: #ce2123;
+  -webkit-box-shadow: 1px 1px 6px #333;
+  -moz-box-shadow: 1px 1px 6px #333;
+  -o-box-shadow: 1px 1px 6px #333;
+  box-shadow: 1px 1px 6px #333;
+}
+
+.display {
+  display: inline !important;
+}
+
+
 /* Tablet (Small) screens display *****************************************************/
 @media only screen and (max-width: 992px) {
 
@@ -226,7 +250,7 @@ footer h5 {
   }
 }
 
-/* Mobile (Extra Small) screens display *****************************************************/
+/* Mobile (Extra Small) screens display ************************************************/
 @media only screen and (max-width: 768px) {
 
   .nav-item {
@@ -265,15 +289,10 @@ footer h5 {
     padding: 1rem 0;
   }
 
-  #follow-us{
-    margin: auto;
-  }
-
   .navbar-shrink {
     font-size: 1.5rem!important;
   }
 
-  
   .navbar-shrink .navbar-logo img {
     width: 70px!important;
     height: 70px!important;
@@ -281,30 +300,19 @@ footer h5 {
 }
 
 
-/* Scroll to top Button ******************************************/
-#scroll-to-top {
-  display: none;
-  position: fixed;
-  right: 35px;
-  bottom: 35px;
-  z-index: 999;
-}
+/* Mobile (Extra Small) screens display ************************************************/
+@media only screen and (max-width: 496px) {
 
-#scroll-to-top i {
-  color: #fff;
-  background-color: #ce2123;
-  -webkit-box-shadow: 1px 1px 6px #333;
-  -moz-box-shadow: 1px 1px 6px #333;
-  -o-box-shadow: 1px 1px 6px #333;
-  box-shadow: 1px 1px 6px #333;
-}
+  #scroll-to-top {
+    bottom: 13rem;
+  }
 
-.display {
-  display: inline !important;
+  #follow-us{
+    margin: auto;
+  }
 }
 
 /* Shrinked Navigation Bar Spacing  ****************************************/
-
 .navbar-shrink {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

@@ -31,7 +31,7 @@
 		/*-----------------------------------------------------------------------------------
 			Shrink Navbar and Display "Scroll to Top" button When scrolling down -------------
 		------------------------------------------------------------------------------------*/
-		var navbarFloat = function () {
+		var onScroll = function () {
 			if ($nav.offset().top > 100) {
 				$nav.addClass("navbar-shrink");
 				$scrollToTop.addClass("display");
@@ -40,10 +40,10 @@
 				$scrollToTop.removeClass("display");
 			}
 		};
-		// Collapse now if page is not at top
-		navbarFloat();
-		// Collapse the navbar when page is scrolled
-		$window.scroll(navbarFloat);
+		// run onScroll now if page is not at top
+		onScroll();
+		// Shrink the navbar when page is scrolled
+		$window.scroll(onScroll);
 		});
 
 		/*---------------------------------------------------
