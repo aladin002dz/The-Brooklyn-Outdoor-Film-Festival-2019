@@ -326,3 +326,12 @@ footer h5 {
   height: 44px;
 }
 
+
+.form-error {
+  display: block;
+  color: red;
+}
+
+.invalid-feedback {
+  display: block;
+}

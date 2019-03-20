@@ -170,7 +170,7 @@
                         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <div class="d-flex justify-content-between align-items-center w-100">
                             <strong class="text-gray-dark">New Yorke Times</strong>
-                            <a href="https://twitter.com/nytimes">Read More</a>
+                            <a href="https://twitter.com/">Read More</a>
                         </div>
                         <span class="d-block">@nytimes</span>
                         </div>
@@ -180,7 +180,7 @@
                         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <div class="d-flex justify-content-between align-items-center w-100">
                             <strong class="text-gray-dark">The New Yorker</strong>
-                            <a href="https://twitter.com/NewYorker">Read More</a>
+                            <a href="https://twitter.com/">Read More</a>
                         </div>
                         <span class="d-block">@NewYorker</span>
                         </div>
@@ -190,13 +190,13 @@
                         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <div class="d-flex justify-content-between align-items-center w-100">
                             <strong class="text-gray-dark">NBC</strong>
-                            <a href="https://twitter.com/nbc">Read More</a>
+                            <a href="https://twitter.com/">Read More</a>
                         </div>
                         <span class="d-block">@nbc</span>
                         </div>
                     </div>
                     <small class="d-block text-right mt-3">
-                        <a href="https://twitter.com/hashtag/OpenClassroomsTheBrooklynOutdoorFilmFestival2019?src=hash">All articles</a>
+                        <a href="https://twitter.com/">All articles</a>
                     </small>
                 </div>
             </div>
@@ -218,7 +218,7 @@
                         </p>
                     </div>
                     <small class="d-block text-right mt-3">
-                        <a href="https://twitter.com/hashtag/OpenClassroomsTheBrooklynOutdoorFilmFestival2019?src=hash">All tweets</a>
+                        <a href="https://twitter.com/">All tweets</a>
                     </small>
                 </div>
             </div>
@@ -241,8 +241,8 @@
                     <div>
                         <h5>Learn More</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Brooklyn’s news</a></li>
-                            <li><a class="text-muted" href="#">Brooklyn Bridge Park’s website</a></li>
+                            <li><a class="text-muted" href="https://www.nydailynews.com/new-york/brooklyn/" target="_blank" >Brooklyn’s news</a></li>
+                            <li><a class="text-muted" href="https://www.brooklynbridgepark.org/" target="_blank">Brooklyn Bridge Park’s website</a></li>
                         </ul>
                     </div>
                     <div class="d-flex flex-column align-items-center px-3">
@@ -257,18 +257,18 @@
                             <div class="social-links text-center">
                                 <ul class="text-left d-flex flex-nowrap">
                                     <li>
-                                        <a href="https://twitter.com/aladin02dz" target="_blank">
+                                        <a href="https://twitter.com/" target="_blank">
                                             <i class="fab fa-twitter btn-circle"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/mahfoudh-arous-39761484?trk=nav_responsive_tab_profile"
+                                        <a href="https://www.linkedin.com/"
                                             target="_blank">
                                             <i class="fab fa-instagram btn-circle"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/profile.php?id=100007573068750" target="_blank">
+                                        <a href="https://www.facebook.com/" target="_blank">
                                             <i class="fab fa-facebook-f btn-circle"></i>
                                         </a>
                                     </li>
@@ -282,7 +282,8 @@
     </footer>
     
     <!-- Registration Form ========================================================== -->    
-    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" style="display: none;" aria-hidden="true">
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" style="display: none;"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -292,69 +293,72 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="" id="registration-form">
                         <div class="mb-3">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-user-alt"></i>
-                                    </span>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user-alt"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" id="name" placeholder="Name"
+                                        data-validation="required">
                                 </div>
-                                <input type="text" class="form-control" id="username" placeholder="Name" required="">
-                                <div class="invalid-feedback" style="width: 100%;">
-                                Your username is required.
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                    <input type="email" data-validation="email" class="form-control" id="email"
+                                        placeholder="Email">
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-envelope"></i>
-                                    </span>
+                            <div class="form-group">
+                                <label>
+                                    <div class="input-group-prepend d-inline-block mr-2">
+                                        <span class="input-group-text"><i class="fas fa-users"></i></span>
+                                    </div> Days to attend
+                                </label>
+                                <div class="ml-5 pl-5">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="day1" name="day" data-validation="checkbox_group" data-validation-qty="min1">
+                                        <label class="custom-control-label" for="day1">August, 5th</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="day2" name="day" data-validation="checkbox_group">
+                                        <label class="custom-control-label" for="day2">August, 6th</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="day3" name="day" data-validation="checkbox_group">
+                                        <label class="custom-control-label" for="day3">August, 7th</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="day4" name="day" data-validation="checkbox_group">
+                                        <label class="custom-control-label" for="day4">August, 8th</label>
+                                    </div>
                                 </div>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label><div class="input-group-prepend d-inline-block mr-2">
-                                <span class="input-group-text"><i class="fas fa-users"></i></span>
-                            </div> Days to attend</label>
-                            <div class="ml-5 pl-5">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="day1">
-                                <label class="custom-control-label" for="day1">August, 5th</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="day2">
-                                <label class="custom-control-label" for="day2">August, 6th</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="day3">
-                                <label class="custom-control-label" for="day3">August, 7th</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="day4">
-                                <label class="custom-control-label" for="day4">August, 8th</label>
-                            </div>
-                            </div>
-                        </div>  
-                        <div class="form-group">
+                            <div class="form-group">
                                 <label for="message">
                                     <div class="input-group-prepend d-inline-block mr-2">
                                         <span class="input-group-text"><i class="fas fa-comment"></i></span>
-                                    </div> Drop us a word</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                                    </div> Drop us a word (<span id="message-max-length">100</span> characters left)
+                                </label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">  
+                            <button type="submit" class="btn btn-danger btn-lg btn-block w-10">Register</button>
                         </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-lg btn-block w-10" data-dismiss="modal">Register</button>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Scroll to Top Button ========================== -->
     <a id="scroll-to-top" href="#about">
         <i class="fa fa-angle-up btn-circle"></i>
@@ -365,7 +369,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
     <script src="./vendor/js/smooth-scroll.polyfills.min.js" ></script>
-    <script src="./vendor/js/wow.min.js" ></script> 
+    <script src="./vendor/js/wow.min.js" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
